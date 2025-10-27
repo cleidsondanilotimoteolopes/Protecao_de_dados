@@ -1,12 +1,111 @@
-<!-- sobre.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sobre o Projeto</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"></head>
-<body class="p-4">
-  <h1 class="text-center text-primary">Sobre o Projeto</h1>
-  <p class="lead text-center">O projeto foi desenvolvido como parte da disciplina de Extensão Universitária da Uninassau.</p>
-  <p>O objetivo é conscientizar alunos e funcionários sobre segurança digital, apresentando de forma simples temas como a LGPD, golpes online e ferramentas de proteção. O grupo é composto por alunos do curso de Análise e Desenvolvimento de Sistemas.</p>
-  <p><strong>Integrantes:</strong> Bruno César, Cleidson Danilo, Daniel Mesquita, Eduardo Belo, Enzo Grippe, Fábio Cosdem, Gabriel Moura, Hanniel Carvalho, Jhesimiel Nascimento e Pablo Souza.</p>
-  <a href="index.html" class="btn btn-primary mt-3">Voltar</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre o Projeto | Segurança Digital</title>
+
+  <!-- Bootstrap, FontAwesome e AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="stylesheet" href="../assets/css/sobre.css" />
+</head>
+
+<body>
+  <!-- NAVBAR (fixa) -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-shield-halved me-2"></i>Segurança Digital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #fff;">
+        <i class="fa-solid fa-bars" style="color: #fff; font-size: 1.25rem;"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="lgpd.html">LGPD</a></li>
+          <li class="nav-item"><a class="nav-link" href="golpes.html">Golpes Digitais</a></li>
+          <li class="nav-item"><a class="nav-link" href="protecao.html">Proteção</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <h1 data-aos="fade-down">Sobre o Projeto</h1>
+      <p class="mb-0" data-aos="fade-up" data-aos-delay="100">Capacitação Digital em Segurança de Dados — APIEXT | Uninassau Boa Viagem</p>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+   <br>
+  <main class="panel" role="main" aria-labelledby="sobre-title" data-aos="fade-up">
+    <h2 id="sobre-title" class="section-title"><i class="fa-solid fa-bullseye me-2"></i>Objetivo do Projeto</h2>
+    <p class="lead-sub">O projeto tem como objetivo conscientizar alunos e funcionários sobre segurança digital, abordando de forma acessível e prática temas como a Lei Geral de Proteção de Dados (LGPD), golpes online e ferramentas de proteção. A ação integra a disciplina de extensão APIEXT do curso de Análise e Desenvolvimento de Sistemas da <strong>Uninassau – Boa Viagem</strong>.</p>
+
+    <h3 class="section-title mt-4"><i class="fa-solid fa-users me-2"></i>Integrantes</h3>
+    <ul class="team-list" aria-label="Lista de integrantes">
+      <li><i class="fa-regular fa-user"></i> Bruno César</li>
+      <li><i class="fa-regular fa-user"></i> Cleidson Danilo</li>
+      <li><i class="fa-regular fa-user"></i> Daniel Mesquita</li>
+      <li><i class="fa-regular fa-user"></i> Eduardo Belo</li>
+      <li><i class="fa-regular fa-user"></i> Enzo Grippe</li>
+      <li><i class="fa-regular fa-user"></i> Fábio Cosdem</li>
+      <li><i class="fa-regular fa-user"></i> Gabriel Moura</li>
+      <li><i class="fa-regular fa-user"></i> Hanniel Carvalho</li>
+      <li><i class="fa-regular fa-user"></i> Jhesimiel Nascimento</li>
+      <li><i class="fa-regular fa-user"></i> Pablo Souza</li>
+    </ul>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer text-white">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-4">
+          <h5>Segurança Digital</h5>
+          <p class="mb-0">Materiais educativos sobre proteção de dados e prevenção contra golpes virtuais.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="lgpd.html">LGPD e Dados</a></li>
+            <li><a href="golpes.html">Golpes Digitais</a></li>
+            <li><a href="protecao.html">Proteção Digital</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <p class="mb-0"><i class="fa-regular fa-envelope me-2"></i> contato@segurancadigital.com</p>
+          <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> Recife - PE</p>
+        </div>
+      </div>
+
+      <hr class="border-light mt-3">
+      <div class="text-center small mt-2">© 2025 Segurança Digital — Projeto APIEXT | Uninassau Boa Viagem</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Se usar fixed-top, você pode ajustar o scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          const y = target.getBoundingClientRect().top + window.pageYOffset - 72; // 72 = altura navbar
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -1,16 +1,87 @@
 <!-- lgpd.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LGPD e Dados Pessoais</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"></head>
-<body class="p-4">
-  <h1 class="text-center text-primary">LGPD e Dados Pessoais</h1>
-  <p class="lead text-center">Entenda a importância da proteção de dados e como a LGPD atua para garantir sua privacidade.</p>
-  <ul class="list-group my-4">
-    <li class="list-group-item">A LGPD (Lei Geral de Proteção de Dados) regula o tratamento de informações pessoais no Brasil.</li>
-    <li class="list-group-item">Ela define direitos como acesso, correção e exclusão de dados.</li>
-    <li class="list-group-item">As empresas precisam de consentimento para coletar dados pessoais.</li>
-    <li class="list-group-item">Casos de vazamento podem gerar sanções e multas.</li>
-  </ul>
-  <a href="index.html" class="btn btn-primary">Voltar</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LGPD e Dados Pessoais</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body>
+
+  <!-- Navbar (modelo sobre.html) -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-shield-halved me-2"></i>Segurança Digital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #fff;">
+        <i class="fa-solid fa-bars" style="color: #fff; font-size: 1.25rem;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="lgpd.html">LGPD</a></li>
+          <li class="nav-item"><a class="nav-link" href="golpes.html">Golpes Digitais</a></li>
+          <li class="nav-item"><a class="nav-link" href="protecao.html">Proteção</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="text-center text-primary" data-aos="fade-up">LGPD e Dados Pessoais</h1>
+    <p class="lead text-center mb-4" data-aos="fade-up" data-aos-delay="100">Entenda a importância da proteção de dados e como a LGPD atua para garantir sua privacidade.</p>
+    <ul class="list-group my-4" data-aos="fade-up" data-aos-delay="150">
+      <li class="list-group-item">A LGPD (Lei Geral de Proteção de Dados) regula o tratamento de informações pessoais no Brasil.</li>
+      <li class="list-group-item">Ela define direitos como acesso, correção e exclusão de dados.</li>
+      <li class="list-group-item">As empresas precisam de consentimento para coletar dados pessoais.</li>
+      <li class="list-group-item">Casos de vazamento podem gerar sanções e multas.</li>
+    </ul>
+  </main>
+
+  <!-- Footer (padronizado) -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>Segurança Digital</h5>
+          <p>Informações e materiais educativos sobre segurança digital e prevenção a golpes.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Links Úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="lgpd.html" class="text-white text-decoration-none">LGPD e Dados</a></li>
+            <li><a href="golpes.html" class="text-white text-decoration-none">Golpes Digitais</a></li>
+            <li><a href="protecao.html" class="text-white text-decoration-none">Proteção Digital</a></li>
+            <li><a href="sobre.html" class="text-white text-decoration-none">Sobre o Projeto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Contato</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope me-2"></i> contato@segurancadigital.com</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i> Recife - PE</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">© 2025 - Projeto APIEXT | Uninassau Boa Viagem | Desenvolvido por Cleidson Danilo e equipe</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-white text-decoration-none me-3">Política de Privacidade</a>
+          <a href="#" class="text-white text-decoration-none">Acessibilidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init({ duration: 800, once: true }); </script>
 </body>
 </html>
