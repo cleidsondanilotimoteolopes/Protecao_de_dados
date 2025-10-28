@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre o Projeto | Segurança Digital</title>
 
   <!-- Bootstrap, FontAwesome e AOS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <link rel="stylesheet" href="../assets/css/sobre.css" />
+  <link rel="stylesheet" href="../assets/css/sobre.css" />
 </head>
 
 <body>
@@ -17,7 +18,9 @@
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container">
       <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-shield-halved me-2"></i>Segurança Digital</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #fff;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #fff;">
         <i class="fa-solid fa-bars" style="color: #fff; font-size: 1.25rem;"></i>
       </button>
 
@@ -36,15 +39,19 @@
   <header class="page-hero">
     <div class="container">
       <h1 data-aos="fade-down">Sobre o Projeto</h1>
-      <p class="mb-0" data-aos="fade-up" data-aos-delay="100">Capacitação Digital em Segurança de Dados — APIEXT | Uninassau Boa Viagem</p>
+      <p class="mb-0" data-aos="fade-up" data-aos-delay="100">Capacitação Digital em Segurança de Dados — APIEXT |
+        Uninassau Boa Viagem</p>
     </div>
   </header>
 
   <!-- CONTEÚDO PRINCIPAL -->
-   <br>
+  <br>
   <main class="panel" role="main" aria-labelledby="sobre-title" data-aos="fade-up">
     <h2 id="sobre-title" class="section-title"><i class="fa-solid fa-bullseye me-2"></i>Objetivo do Projeto</h2>
-    <p class="lead-sub">O projeto tem como objetivo conscientizar alunos e funcionários sobre segurança digital, abordando de forma acessível e prática temas como a Lei Geral de Proteção de Dados (LGPD), golpes online e ferramentas de proteção. A ação integra a disciplina de extensão APIEXT do curso de Análise e Desenvolvimento de Sistemas da <strong>Uninassau – Boa Viagem</strong>.</p>
+    <p class="lead-sub">O projeto tem como objetivo conscientizar alunos e funcionários sobre segurança digital,
+      abordando de forma acessível e prática temas como a Lei Geral de Proteção de Dados (LGPD), golpes online e
+      ferramentas de proteção. A ação integra a disciplina de extensão APIEXT do curso de Análise e Desenvolvimento de
+      Sistemas da <strong>Uninassau – Boa Viagem</strong>.</p>
 
     <h3 class="section-title mt-4"><i class="fa-solid fa-users me-2"></i>Integrantes</h3>
     <ul class="team-list" aria-label="Lista de integrantes">
@@ -85,7 +92,10 @@
       </div>
 
       <hr class="border-light mt-3">
-      <div class="text-center small mt-2">© 2025 Segurança Digital — Projeto APIEXT | Uninassau Boa Viagem</div>
+      <div class="col-md-6">
+        <p class="mb-0">© 2025 - Projeto APIEXT | Uninassau Boa Viagem | Desenvolvido por:</p>
+        <p class="mt-1">Enzo Grippe, Cleidson Danilo, Bruno César e Jhesimiel Nascimento.</p>
+      </div>
     </div>
   </footer>
 
@@ -97,9 +107,9 @@
 
     // Se usar fixed-top, você pode ajustar o scroll para links internos
     document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function(e){
+      a.addEventListener('click', function (e) {
         const target = document.querySelector(this.getAttribute('href'));
-        if(target){
+        if (target) {
           e.preventDefault();
           const y = target.getBoundingClientRect().top + window.pageYOffset - 72; // 72 = altura navbar
           window.scrollTo({ top: y, behavior: 'smooth' });
@@ -108,4 +118,5 @@
     });
   </script>
 </body>
+
 </html>
