@@ -1,105 +1,626 @@
 <!-- golpes.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golpes Digitais</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/golpes.css" />
+    <style>
+      body {
+        padding-top: 72px;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golpes Digitais</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/index.css">
-  <style>
-    body {
-      padding-top: 72px;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- Navbar (modelo sobre.html) -->
-  <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-shield-halved me-2"></i>Segurança Digital</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"
-        style="border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #fff;">
-        <i class="fa-solid fa-bars" style="color: #fff; font-size: 1.25rem;"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link" href="lgpd.html">LGPD</a></li>
-          <li class="nav-item"><a class="nav-link active" href="golpes.html">Golpes Digitais</a></li>
-          <li class="nav-item"><a class="nav-link" href="protecao.html">Proteção</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container py-5">
-    <h1 class="text-center text-warning" data-aos="fade-up">Golpes Digitais</h1>
-    <p class="lead text-center mb-4" data-aos="fade-up" data-aos-delay="100">Saiba como identificar fraudes e evitar
-      golpes na internet.</p>
-    <div class="container mt-4">
-      <div class="alert alert-danger" data-aos="fade-right">⚠️ Desconfie de e-mails pedindo informações pessoais ou
-        senhas.</div>
-      <div class="alert alert-info" data-aos="fade-right" data-aos-delay="100">🔗 Verifique sempre o endereço do site
-        antes de inserir seus dados.</div>
-      <div class="alert alert-success" data-aos="fade-right" data-aos-delay="200">✅ Ative autenticação em dois fatores
-        (2FA) para mais segurança.</div>
-    </div>
-    <div class="text-center mt-4">
-      <a href="../index.html" class="btn btn-warning">Voltar</a>
-    </div>
-  </main>
-
-  <!-- Footer (padronizado) -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5>Segurança Digital</h5>
-          <p>Informações e materiais educativos sobre segurança digital e prevenção a golpes.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5>Links Úteis</h5>
-          <ul class="list-unstyled">
-            <li><a href="lgpd.html" class="text-white text-decoration-none">LGPD e Dados</a></li>
-            <li><a href="golpes.html" class="text-white text-decoration-none">Golpes Digitais</a></li>
-            <li><a href="protecao.html" class="text-white text-decoration-none">Proteção Digital</a></li>
-            <li><a href="sobre.html" class="text-white text-decoration-none">Sobre o Projeto</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5>Contato</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-envelope me-2"></i> contato@segurancadigital.com</li>
-            <li><i class="fas fa-phone me-2"></i> (81) 1234-5678</li>
-            <li><i class="fas fa-map-marker-alt me-2"></i> Recife - PE</li>
+  <body>
+    <!-- Navbar (modelo sobre.html) -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"
+          ><i class="fa-solid fa-shield-halved me-2"></i>Segurança Digital</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: transparent;
+            color: #fff;
+          "
+        >
+          <i
+            class="fa-solid fa-bars"
+            style="color: #fff; font-size: 1.25rem"
+          ></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="lgpd.html">LGPD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="golpes.html">Golpes Digitais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="protecao.html">Proteção</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
           </ul>
         </div>
       </div>
-      <hr class="bg-light">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="mb-0">© 2025 - Projeto APIEXT | Uninassau Boa Viagem | Desenvolvido por:</p>
-          <p class="mt-1">Enzo Grippe, Cleidson Danilo, Bruno César e Jhesimiel Nascimento.</p>
+    </nav>
+
+    <main class="container py-5">
+      <!-- Cabeçalho da Página -->
+      <section class="hero-section text-center mb-5">
+        <h1 class="display-4 text-warning fw-bold mb-3" data-aos="fade-up">
+          <i class="fas fa-exclamation-triangle me-2"></i>Golpes Digitais
+        </h1>
+        <p class="lead text-muted mb-4" data-aos="fade-up" data-aos-delay="100">
+          Conheça os principais golpes virtuais e aprenda a se proteger contra
+          fraudes online
+        </p>
+
+        <!-- Alertas de Destaque -->
+        <div class="row g-3 mt-4">
+          <div class="col-md-4" data-aos="fade-right">
+            <div class="alert alert-danger border-0 shadow-sm h-100">
+              <i class="fas fa-shield-virus fa-2x mb-2"></i>
+              <h6 class="fw-bold">Desconfie Sempre</h6>
+              <small
+                >E-mails e mensagens pedindo dados pessoais ou senhas</small
+              >
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="alert alert-info border-0 shadow-sm h-100">
+              <i class="fas fa-link fa-2x mb-2"></i>
+              <h6 class="fw-bold">Verifique URLs</h6>
+              <small
+                >Sempre confira o endereço do site antes de inserir dados</small
+              >
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+            <div class="alert alert-success border-0 shadow-sm h-100">
+              <i class="fas fa-lock fa-2x mb-2"></i>
+              <h6 class="fw-bold">Use 2FA</h6>
+              <small
+                >Ative autenticação em dois fatores para mais segurança</small
+              >
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 text-md-end">
-          <a href="#" class="text-white text-decoration-none me-3">Política de Privacidade</a>
-          <a href="#" class="text-white text-decoration-none">Acessibilidade</a>
+      </section>
+
+      <!-- Seção: Tipos de Golpes -->
+      <section class="golpes-section mb-5">
+        <h2 class="text-center mb-4 fw-bold" data-aos="fade-up">
+          <i class="fas fa-bug me-2 text-danger"></i>Principais Tipos de Golpes
+        </h2>
+
+        <!-- Cards de Golpes -->
+        <div class="row g-4">
+          <!-- Phishing -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="card h-100 shadow-sm border-danger border-2">
+              <div class="card-header bg-danger text-white">
+                <h5 class="mb-0"><i class="fas fa-fish me-2"></i>Phishing</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>O que é:</strong> Tentativa de roubo de dados
+                  sensíveis através de e-mails, SMS ou sites maliciosos que se
+                  passam empresas legítimas.
+                </p>
+
+                <div class="alert alert-light mt-3">
+                  <strong>Exemplo:</strong>
+                  <p class="small mb-0">
+                    "[Banco]: Sua senha foi vazada. Clique aqui para
+                    regularizar."
+                  </p>
+                </div>
+
+                <h6 class="text-danger mt-3">
+                  <i class="fas fa-shield-alt me-1"></i>Como se proteger:
+                </h6>
+                <ul class="small">
+                  <li>Não clique em links suspeitos</li>
+                  <li>Verifique se o remetente do e-mail é legitimo</li>
+                  <li>Bancos e instituições nunca pedem senha por e-mail</li>
+                  <li>Verifique se possui o selo https</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Golpe do WhatsApp -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="card h-100 shadow-sm border-success border-2">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0">
+                  <i class="fab fa-whatsapp me-2"></i>Golpe do WhatsApp
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>O que é:</strong> Criminosos clonam contas de WhatsApp
+                  e pedem dinheiro emprestado para contatos da vítima.
+                </p>
+
+                <div class="alert alert-light mt-3">
+                  <strong>Exemplo:</strong>
+                  <p class="small mb-0">
+                    "Oi, mãe! Troquei de número. Preciso de um PIX urgente!"
+                  </p>
+                </div>
+
+                <h6 class="text-success mt-3">
+                  <i class="fas fa-shield-alt me-1"></i>Como se proteger:
+                </h6>
+                <ul class="small">
+                  <li>Ative verificação em duas etapas no WhatsApp</li>
+                  <li>Confirme por ligação antes de enviar dinheiro</li>
+                  <li>Desconfie de pedidos urgentes</li>
+                  <li>Nunca compartilhe códigos SMS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Falso Suporte Técnico -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="card h-100 shadow-sm border-warning border-2">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0">
+                  <i class="fas fa-headset me-2"></i>Falso Suporte Técnico
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>O que é:</strong> Golpistas se passam por técnicos de
+                  empresas como Microsoft para instalar vírus ou roubar dados.
+                </p>
+
+                <div class="alert alert-light mt-3">
+                  <strong>Exemplo:</strong>
+                  <p class="small mb-0">
+                    "Um vírus foi detectado no seu PC. Clique aqui para remover"
+                  </p>
+                </div>
+
+                <h6 class="text-warning mt-3">
+                  <i class="fas fa-shield-alt me-1"></i>Como se proteger:
+                </h6>
+                <ul class="small">
+                  <li>Empresas não ligam sem solicitação</li>
+                  <li>Não permita acesso remoto ao seu PC</li>
+                  <li>Não instale programas desconhecidos</li>
+                  <li>Use antivírus confiável</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Golpe do Falso Investimento -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="card h-100 shadow-sm border-info border-2">
+              <div class="card-header bg-info text-white">
+                <h5 class="mb-0">
+                  <i class="fas fa-chart-line me-2"></i>Investimentos Falsos
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>O que é:</strong> Promessas de retornos altíssimos em
+                  investimentos fraudulentos, pirâmides financeiras.
+                </p>
+
+                <div class="alert alert-light mt-3">
+                  <strong>Exemplo:</strong>
+                  <p class="small mb-0">
+                    "Ganhe 300% em 30 dias! Investimento garantido e sem
+                    riscos!"
+                  </p>
+                </div>
+
+                <h6 class="text-info mt-3">
+                  <i class="fas fa-shield-alt me-1"></i>Como se proteger:
+                </h6>
+                <ul class="small">
+                  <li>Desconfie de promessas irreais</li>
+                  <li>Verifique se a empresa está registrada na CVM</li>
+                  <li>Não invista sob pressão</li>
+                  <li>Pesquise sobre a empresa antes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boleto Falso -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="card h-100 shadow-sm border-primary border-2">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                  <i class="fas fa-barcode me-2"></i>Boleto Falso
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>O que é:</strong> Criminosos alteram boletos legítimos
+                  ou enviam boletos falsos por e-mail.
+                </p>
+
+                <div class="alert alert-light mt-3">
+                  <strong>Exemplo:</strong>
+                  <p class="small mb-0">
+                    E-mail de cobrança com boleto anexado de código de barras
+                    adulterado.
+                  </p>
+                </div>
+
+                <h6 class="text-primary mt-3">
+                  <i class="fas fa-shield-alt me-1"></i>Como se proteger:
+                </h6>
+                <ul class="small">
+                  <li>Confira dados do beneficiário antes de pagar</li>
+                  <li>Baixe boletos apenas de sites oficiais</li>
+                  <li>Compare com a fatura original</li>
+                  <li>Use aplicativos oficiais dos bancos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Compras Online Falsas -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="card h-100 shadow-sm border-secondary border-2">
+              <div class="card-header bg-secondary text-white">
+                <h5 class="mb-0">
+                  <i class="fas fa-shopping-cart me-2"></i>Lojas Falsas
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>O que é:</strong> Sites falsos que vendem produtos por
+                  preços baixos mas nunca entregam a mercadoria.
+                </p>
+
+                <div class="alert alert-light mt-3">
+                  <strong>Exemplo:</strong>
+                  <p class="small mb-0">
+                    "iPhone por R$ 500! Promoção imperdível! Aceitamos apenas
+                    PIX."
+                  </p>
+                </div>
+
+                <h6 class="text-secondary mt-3">
+                  <i class="fas fa-shield-alt me-1"></i>Como se proteger:
+                </h6>
+                <ul class="small">
+                  <li>Pesquise reputação da loja no Reclame Aqui</li>
+                  <li>Desconfie de preços muito baixos</li>
+                  <li>Prefira cartão de crédito (pode contestar)</li>
+                  <li>Verifique se o site tem HTTPS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção: Sinais de Alerta -->
+      <section class="stats-section mb-5">
+        <h2 class="text-center mb-4 fw-bold" data-aos="fade-up">
+          <i class="fas fa-chart-bar me-2 text-info"></i>Números da Fraude
+          Digital no Brasil
+        </h2>
+
+        <div class="row g-4 text-center">
+          <div class="col-md-3 col-sm-6" data-aos="flip-left">
+            <div class="card shadow-sm h-100 bg-danger text-white">
+              <div class="card-body">
+                <i class="fas fa-exclamation-triangle fa-3x mb-3"></i>
+                <h3 class="display-6 fw-bold">5,5 mi</h3>
+                <p class="mb-0">
+                  Brasileiros vítimas de golpes digitais em 2024
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-6"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          >
+            <div class="card shadow-sm h-100 bg-warning">
+              <div class="card-body">
+                <i class="fas fa-dollar-sign fa-3x mb-3"></i>
+                <h3 class="display-6 fw-bold">R$ 2,5 bi</h3>
+                <p class="mb-0">Prejuízo total estimado em fraudes online</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-6"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          >
+            <div class="card shadow-sm h-100 bg-info text-white">
+              <div class="card-body">
+                <i class="fas fa-fish fa-3x mb-3"></i>
+                <h3 class="display-6 fw-bold">37%</h3>
+                <p class="mb-0">Dos golpes são phishing via e-mail ou SMS</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-6"
+            data-aos="flip-left"
+            data-aos-delay="300"
+          >
+            <div class="card shadow-sm h-100 bg-success text-white">
+              <div class="card-body">
+                <i class="fab fa-whatsapp fa-3x mb-3"></i>
+                <h3 class="display-6 fw-bold">28%</h3>
+                <p class="mb-0">Acontecem via WhatsApp clonado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-info mt-4 text-center" data-aos="fade-up">
+          <i class="fas fa-info-circle me-2"></i>
+          <strong>Importante:</strong> A maioria dos golpes poderia ser evitada
+          com atenção e conhecimento sobre segurança digital.
+        </div>
+      </section>
+      <section class="sinais-section mb-5">
+        <h2 class="text-center mb-4 fw-bold" data-aos="fade-up">
+          <i class="fas fa-exclamation-circle me-2 text-warning"></i>Sinais de
+          Alerta
+        </h2>
+
+        <div class="row g-3">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="card border-warning shadow-sm">
+              <div class="card-body">
+                <h5 class="text-warning">
+                  <i class="fas fa-clock me-2"></i>Urgência Excessiva
+                </h5>
+                <p class="mb-0">
+                  Mensagens com prazos curtos ou pressão para agir rapidamente.
+                  "Você tem 24h para resolver!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="card border-warning shadow-sm">
+              <div class="card-body">
+                <h5 class="text-warning">
+                  <i class="fas fa-gift me-2"></i>Ofertas Irreais
+                </h5>
+                <p class="mb-0">
+                  Promoções boas demais para ser verdade. "Ganhe R$ 10.000
+                  gratuitamente!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="card border-warning shadow-sm">
+              <div class="card-body">
+                <h5 class="text-warning">
+                  <i class="fas fa-spell-check me-2"></i>Erros Ortográficos
+                </h5>
+                <p class="mb-0">
+                  Mensagens com erros de português ou formatação estranha
+                  indicam fraude.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="card border-warning shadow-sm">
+              <div class="card-body">
+                <h5 class="text-warning">
+                  <i class="fas fa-user-secret me-2"></i>Solicitação de Dados
+                </h5>
+                <p class="mb-0">
+                  Pedidos de senha, CPF, dados bancários por e-mail, SMS ou
+                  telefone.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção: O Que Fazer Se For Vítima -->
+      <section class="vitima-section mb-5">
+        <div class="card border-danger shadow" data-aos="fade-up">
+          <div class="card-header bg-danger text-white">
+            <h3 class="mb-0">
+              <i class="fas fa-ambulance me-2"></i>Foi Vítima de um Golpe? Aja
+              Rápido!
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="text-danger">
+                  <i class="fas fa-phone-alt me-2"></i>Primeiros Passos:
+                </h5>
+                <ol>
+                  <li>Entre em contato com seu banco imediatamente</li>
+                  <li>
+                    Registre um Boletim de Ocorrência (online ou presencial)
+                  </li>
+                  <li>Bloqueie cartões e contas comprometidas</li>
+                  <li>Troque todas as suas senhas</li>
+                  <li>
+                    Notifique amigos e familiares se sua conta foi clonada
+                  </li>
+                </ol>
+              </div>
+              <div class="col-md-6">
+                <h5 class="text-danger">
+                  <i class="fas fa-balance-scale me-2"></i>Canais de Denúncia:
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fas fa-globe me-2 text-primary"></i>
+                    <strong>Safernet:</strong>
+                    <a
+                      href="https://new.safernet.org.br/denuncie"
+                      target="_blank"
+                      rel="noopener"
+                      >new.safernet.org.br/denuncie</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-phone me-2 text-success"></i>
+                    <strong>Polícia Civil:</strong> 197 (PE) ou delegacia
+                    virtual
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-building me-2 text-info"></i>
+                    <strong>Banco Central:</strong> registre no site do BC
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-shield-alt me-2 text-warning"></i>
+                    <strong>Procon:</strong> para problemas de consumo
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção: Estatísticas -->
+    </main>
+
+    <!-- Footer (padronizado) -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Segurança Digital</h5>
+            <p>
+              Informações e materiais educativos sobre segurança digital e
+              prevenção a golpes.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Links Úteis</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="lgpd.html" class="text-white text-decoration-none"
+                  >LGPD e Dados</a
+                >
+              </li>
+              <li>
+                <a href="golpes.html" class="text-white text-decoration-none"
+                  >Golpes Digitais</a
+                >
+              </li>
+              <li>
+                <a href="protecao.html" class="text-white text-decoration-none"
+                  >Proteção Digital</a
+                >
+              </li>
+              <li>
+                <a href="sobre.html" class="text-white text-decoration-none"
+                  >Sobre o Projeto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Contato</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-envelope me-2"></i>
+                contato@segurancadigital.com
+              </li>
+              <li><i class="fas fa-phone me-2"></i> (81) 1234-5678</li>
+              <li><i class="fas fa-map-marker-alt me-2"></i> Recife - PE</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">
+              © 2025 - Projeto APIEXT | Uninassau Boa Viagem | Desenvolvido por:
+            </p>
+            <p class="mt-1">
+              Enzo Grippe, Cleidson Danilo, Bruno César e Jhesimiel Nascimento.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-white text-decoration-none me-3"
+              >Política de Privacidade</a
+            >
+            <a href="#" class="text-white text-decoration-none"
+              >Acessibilidade</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script> AOS.init({ duration: 800, once: true }); </script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+  </body>
 </html>
