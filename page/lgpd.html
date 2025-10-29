@@ -1,28 +1,41 @@
-<!-- lgpd.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LGPD e Dados Pessoais</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <title>LGPD - Proteção de Dados</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- AOS CSS para animações -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="../assets/css/lgpd.css">
+  <!-- Font Awesome (ícones) -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/index.css">
 </head>
+
 <body>
 
-  <!-- Navbar (modelo sobre.html) -->
+  <!-- NAVBAR (modelo sobre.html) -->
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container">
       <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-shield-halved me-2"></i>Segurança Digital</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #fff;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #fff;">
         <i class="fa-solid fa-bars" style="color: #fff; font-size: 1.25rem;"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link active" href="lgpd.html">LGPD</a></li>
+          <li class="nav-item"><a class="nav-link" href="lgpd.html">LGPD</a></li>
           <li class="nav-item"><a class="nav-link" href="golpes.html">Golpes Digitais</a></li>
           <li class="nav-item"><a class="nav-link" href="protecao.html">Proteção</a></li>
           <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
@@ -31,58 +44,243 @@
     </div>
   </nav>
 
-  <main class="container py-5">
-    <h1 class="text-center text-primary" data-aos="fade-up">LGPD e Dados Pessoais</h1>
-    <p class="lead text-center mb-4" data-aos="fade-up" data-aos-delay="100">Entenda a importância da proteção de dados e como a LGPD atua para garantir sua privacidade.</p>
-    <ul class="list-group my-4" data-aos="fade-up" data-aos-delay="150">
-      <li class="list-group-item">A LGPD (Lei Geral de Proteção de Dados) regula o tratamento de informações pessoais no Brasil.</li>
-      <li class="list-group-item">Ela define direitos como acesso, correção e exclusão de dados.</li>
-      <li class="list-group-item">As empresas precisam de consentimento para coletar dados pessoais.</li>
-      <li class="list-group-item">Casos de vazamento podem gerar sanções e multas.</li>
-    </ul>
-  </main>
+  <!-- HERO (mantido) -->
+  <header class="lgpd-header pt-5">
+    <div class="header-hero text-center text-white py-5">
+      <h1 data-aos="fade-down">Lei Geral de Proteção de Dados (LGPD)</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="100">Entenda seus direitos e aprenda como proteger suas
+        informações pessoais</p>
+    </div>
+  </header>
 
-  <!-- Footer (padronizado) -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5>Segurança Digital</h5>
-          <p>Informações e materiais educativos sobre segurança digital e prevenção a golpes.</p>
+  <main class="container my-5">
+
+    <!-- Seção 1: Introdução -->
+    <section class="mb-5" data-aos="fade-right">
+      <h2 class="text-primary mb-3"><i class="bi bi-book"></i> O que é a LGPD?</h2>
+      <p>A <strong>LGPD (Lei nº 13.709/2018)</strong> é uma legislação brasileira que regula o uso, coleta e
+        armazenamento de dados pessoais. Inspirada na GDPR (lei europeia), entrou em vigor em 2020 e garante que todos
+        tenham o direito à privacidade e ao controle de suas informações.</p>
+    </section>
+
+    <!-- Seção 2: Linha do Tempo -->
+    <section class="mb-5" data-aos="fade-up">
+      <h2 class="text-primary text-center mb-4"><i class="bi bi-calendar-event"></i> Linha do Tempo da Proteção de Dados
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="timeline-dot bg-primary"></div>
+          <div class="timeline-content">
+            <h5>2018</h5>
+            <p>Aprovada a LGPD no Brasil (Lei nº 13.709).</p>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5>Links Úteis</h5>
-          <ul class="list-unstyled">
-            <li><a href="lgpd.html" class="text-white text-decoration-none">LGPD e Dados</a></li>
-            <li><a href="golpes.html" class="text-white text-decoration-none">Golpes Digitais</a></li>
-            <li><a href="protecao.html" class="text-white text-decoration-none">Proteção Digital</a></li>
-            <li><a href="sobre.html" class="text-white text-decoration-none">Sobre o Projeto</a></li>
-          </ul>
+        <div class="timeline-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="timeline-dot bg-info"></div>
+          <div class="timeline-content">
+            <h5>2020</h5>
+            <p>Lei entra oficialmente em vigor.</p>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5>Contato</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-envelope me-2"></i> contato@segurancadigital.com</li>
-            <li><i class="fas fa-map-marker-alt me-2"></i> Recife - PE</li>
-          </ul>
+        <div class="timeline-item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="timeline-dot bg-success"></div>
+          <div class="timeline-content">
+            <h5>2021</h5>
+            <p>ANPD (Autoridade Nacional de Proteção de Dados) começa a fiscalizar empresas.</p>
+          </div>
         </div>
       </div>
-      <hr class="bg-light">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="mb-0">© 2025 - Projeto APIEXT | Uninassau Boa Viagem | Desenvolvido por:</p>
-          <p class="mt-1">Enzo Grippe, Cleidson Danilo, Bruno César e Jhesimiel Nascimento.</p>
+    </section>
+
+    <!-- Seção 3: Conceitos Principais -->
+    <section class="mb-5" data-aos="fade-left">
+      <h2 class="text-primary text-center mb-4"><i class="bi bi-search"></i> Principais Conceitos</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card shadow-sm text-center p-3 h-100" data-aos="flip-left">
+            <i class="bi bi-person-fill text-primary fs-2 mb-2"></i>
+            <p><strong>Dados Pessoais:</strong> informações que identificam alguém (nome, CPF, e-mail, etc).</p>
+          </div>
         </div>
-        <div class="col-md-6 text-md-end">
-          <a href="#" class="text-white text-decoration-none me-3">Política de Privacidade</a>
-          <a href="#" class="text-white text-decoration-none">Acessibilidade</a>
+        <div class="col-md-4">
+          <div class="card shadow-sm text-center p-3 h-100" data-aos="flip-left" data-aos-delay="100">
+            <i class="bi bi-shield-lock text-primary fs-2 mb-2"></i>
+            <p><strong>Dados Sensíveis:</strong> dados sobre religião, saúde, vida sexual, opinião política, etc.</p>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm text-center p-3 h-100" data-aos="flip-left" data-aos-delay="200">
+            <i class="bi bi-person-check text-primary fs-2 mb-2"></i>
+            <p><strong>Titular:</strong> é o dono dos dados — o cidadão.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 4: Dicas -->
+    <section class="mb-5" data-aos="fade-up">
+      <h2 class="text-primary text-center mb-4"><i class="bi bi-lightbulb"></i> Dicas para proteger seus dados</h2>
+      <div class="accordion" id="accordionDicas">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dica1">
+              <i class="bi bi-shield-check me-2"></i> Use senhas fortes e verificação em duas etapas
+            </button>
+          </h2>
+          <div id="dica1" class="accordion-collapse collapse show" data-bs-parent="#accordionDicas">
+            <div class="accordion-body">Crie senhas únicas e ative autenticação em dois fatores sempre que possível.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dica2">
+              <i class="bi bi-link-45deg me-2"></i> Cuidado com links suspeitos
+            </button>
+          </h2>
+          <div id="dica2" class="accordion-collapse collapse" data-bs-parent="#accordionDicas">
+            <div class="accordion-body">Evite clicar em e-mails e mensagens pedindo dados pessoais. Verifique o
+              remetente.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dica3">
+              <i class="bi bi-wifi-off me-2"></i> Evite redes Wi-Fi públicas
+            </button>
+          </h2>
+          <div id="dica3" class="accordion-collapse collapse" data-bs-parent="#accordionDicas">
+            <div class="accordion-body">Prefira usar dados móveis ou VPN em redes abertas.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 5: Formulário de Solicitação -->
+    <section class="mb-5" data-aos="fade-right">
+      <h2 class="text-primary text-center mb-3"><i class="bi bi-envelope"></i> Solicitação de Exclusão de Dados</h2>
+      <form id="formLgpd" class="p-4 border rounded bg-light shadow-sm">
+        <label for="nome" class="form-label">Nome completo:</label>
+        <input type="text" id="nome" class="form-control mb-3" placeholder="Ex: João Silva" required>
+
+        <label for="email" class="form-label">E-mail:</label>
+        <input type="email" id="email" class="form-control mb-3" placeholder="exemplo@email.com" required>
+
+        <button type="submit" class="btn btn-primary w-100">Enviar Solicitação</button>
+      </form>
+      <div id="mensagem" class="text-center mt-3 fw-bold"></div>
+    </section>
+
+    <!-- Seção 6: Quiz -->
+    <section class="mb-5 text-center" data-aos="fade-up">
+      <h2 class="text-primary mb-3"><i class="bi bi-bullseye"></i> Teste seus conhecimentos</h2>
+      <p>O que significa LGPD?</p>
+      <button class="btn btn-outline-primary quiz-btn">Lei Geral de Proteção de Dados</button>
+      <button class="btn btn-outline-primary quiz-btn">Lei Global de Privacidade Digital</button>
+      <p id="resultadoQuiz" class="mt-3 fw-bold"></p>
+    </section>
+
+    <!-- Seção 7: Fontes -->
+    <section class="mb-5" data-aos="fade-up">
+      <h2 class="text-primary text-center mb-4"><i class="bi bi-journal-text"></i> Fontes e Leitura Adicional</h2>
+      <div class="accordion" id="fontesLgpd">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fonte1">
+              O que é a LGPD? – MPF
+            </button>
+          </h2>
+          <div id="fonte1" class="accordion-collapse collapse show" data-bs-parent="#fontesLgpd">
+            <div class="accordion-body">
+              Explicação oficial do Ministério Público Federal sobre o objetivo e a base legal da LGPD.<br>
+              <a href="https://www.mpf.mp.br/servicos/lgpd/o-que-e-a-lgpd" target="_blank"
+                class="text-decoration-none">🔗 Acessar fonte oficial</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fonte2">
+              Direitos dos Titulares – Gov.br
+            </button>
+          </h2>
+          <div id="fonte2" class="accordion-collapse collapse" data-bs-parent="#fontesLgpd">
+            <div class="accordion-body">
+              Detalha os direitos que os cidadãos têm sobre seus dados pessoais conforme o art. 17 da LGPD.<br>
+              <a href="https://www.gov.br/mds/pt-br/acesso-a-informacao/lgpd/direitos-do-titular" target="_blank"
+                class="text-decoration-none">🔗 Ver no Gov.br</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fonte3">
+              Penalidades e Multas – FIA
+            </button>
+          </h2>
+          <div id="fonte3" class="accordion-collapse collapse" data-bs-parent="#fontesLgpd">
+            <div class="accordion-body">
+              Explica as penalidades e multas aplicáveis em caso de descumprimento da LGPD.<br>
+              <a href="https://fia.com.br/blog/multa-lgpd/" target="_blank" class="text-decoration-none">🔗 Ler
+                artigo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (padronizado, modelo sobre.html) -->
+  <footer class="site-footer text-white">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-4">
+          <h5>Segurança Digital</h5>
+          <p class="mb-0">Materiais educativos sobre proteção de dados e prevenção contra golpes virtuais.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="lgpd.html"class="text-white text-decoration-none">LGPD e Dados</a></li>
+            <li><a href="golpes.html"class="text-white text-decoration-none">Golpes Digitais</a></li>
+            <li><a href="protecao.html"class="text-white text-decoration-none">Proteção Digital</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <p class="mb-0"><i class="fa-regular fa-envelope me-2"></i> contato@segurancadigital.com</p>
+          <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> Recife - PE</p>
+        </div>
+      </div>
+
+      <hr class="border-light mt-3">
+      <div class="col-md-6">
+        <p class="mb-0">© 2025 - Projeto APIEXT | Uninassau Boa Viagem | Desenvolvido por:</p>
+        <p class="mt-1">Enzo Grippe, Cleidson Danilo, Bruno César e Jhesimiel Nascimento.</p>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script> AOS.init({ duration: 800, once: true }); </script>
+  <script src="../assets/js/lgpd.js"></script>
+  <script>
+    // Inicializa AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
+    });
+  </script>
+
+
 </body>
+
 </html>
